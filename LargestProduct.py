@@ -1,15 +1,18 @@
-
+# Helen Chac
+# This program was aimed to 
 
 def main():
     print "Hello"
     file_name = "LargestProductTest.txt"
     f = open(file_name, 'r')
-#    print f.read()
-    s = f.readline()
-    s = s.strip('\n')
-    out = s.split(' ')
-    print out
-#    print f.readline()
+
+    for line in f:
+        # removes the trailing '\n'        
+        line = line.strip('\n')
+        out = line.split(' ')
+        #print f.readline()
+        print out
+
     return
 
 main()
